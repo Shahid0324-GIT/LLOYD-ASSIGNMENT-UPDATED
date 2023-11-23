@@ -1,0 +1,24 @@
+.app__product-display-items {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.app__product-card-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .app__product-card-desktop {
+    display: none;
+  }
+
+  .app__product-card-mobile {
+    display: block;
+    padding: 1.2rem;
+  }
+  .app__product-display-items-mobile {
+    overflow: auto;
+    display: flex;
+    gap: 2rem;
+  }
+}

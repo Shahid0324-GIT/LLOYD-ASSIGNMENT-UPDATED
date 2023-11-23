@@ -1,0 +1,120 @@
+/* Desktop-CSS */
+
+.app__home-page-desktop {
+  display: flex;
+}
+
+.app__side-menu-items {
+  list-style: none;
+  overflow: auto;
+  height: fit-content;
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  height: 100vh;
+  width: 250px;
+}
+
+.app__side-menu-btn {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #737d94;
+  text-align: left;
+  padding: 1rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.app__side-menu-btn:hover {
+  background-color: #5da9e9;
+  color: white;
+}
+
+.app__home-page-prduct-display {
+  list-style: none;
+  transform: translateX(270px);
+  padding: 0.7rem 0;
+  width: 100%;
+  max-width: 1120px;
+  align-self: center;
+}
+
+.app__home-page-mobile {
+  display: none;
+}
+
+.active {
+  background-color: #5da9e9;
+  color: white;
+}
+
+/* Mobile CSS */
+
+@media screen and (max-width: 768px) {
+  .app__home-page-desktop {
+    display: none;
+  }
+
+  .app__home-page-mobile {
+    display: block;
+    position: relative;
+  }
+
+  .fixed {
+    position: fixed;
+    /* top: 0; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: white;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .app__home-page-mobile-categories-section {
+    display: flex;
+    gap: 2rem;
+    padding: 0.8rem;
+    width: 100%;
+  }
+
+  .app__mobile-productcard {
+    text-align: center;
+    color: #737d94;
+    padding: 0.2rem;
+  }
+
+  .app__mobile-icon {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+    background: #ededed;
+    border-radius: 0.8rem;
+    border: none;
+    color: #737d94;
+    margin: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.6rem;
+  }
+
+  .active {
+    color: white;
+    background-color: #5da9e9;
+  }
+
+  .app__home-page-mobile-products-section {
+    overflow: auto;
+    transform: translateY(170px);
+  }
+
+  .app__mobile-label {
+    color: #737d94;
+    font-weight: 700;
+  }
+
+  .active-label {
+    color: #5da9e9;
+  }
+}
