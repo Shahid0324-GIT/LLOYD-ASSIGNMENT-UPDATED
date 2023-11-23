@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
 # Live Working Site
 
-Use this [Link](<a href="https://lloyd-assignment.netlify.app/" target="_blank"></a>) to see the final result.
+Use this <a href="https://lloyd-assignment.netlify.app/" target="_blank">Link</a> to see the final result.
